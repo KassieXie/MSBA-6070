@@ -5,6 +5,18 @@
 
 Analyzing India Air Quality Dataset, released by the Ministry of Environment and Forests and Central Pollution Control Board of India under the National Data Sharing and Accessibility Policy (NDSAP).
 
+## Assignment Requirements
+
+Import the dataset
+
+Check the dataset info
+
+Cleansing the dataset
+
+Handling missing values
+
+Data Analysis
+
 ## Language 
 
 The code part: Use Python 3 
