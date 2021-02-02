@@ -23,4 +23,4 @@ The reasoning behind each part of codes should be already explained in the comme
 
 ## Contributing
 Apologize in advance that any pull requests other by the host might be rejected because this is an education repository for personal use. 
-But welcome to open an issue if you have something want to discuss or directly contact to me via my email (xxie3@lion.lmu.edu).
+Still, welcome to open an issue if you have something want to discuss, or directly contact with me via my email (xxie3@lion.lmu.edu).
