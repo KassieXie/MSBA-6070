@@ -6,7 +6,10 @@
 Goal: train the model with set of emails labelled as either from spam or not spam. We shall ask model to predict the category of this emails and compare the accuracy with correct classification that we already know. 
 
 Training size: 702 emails
+
 Testing size: 260 emails
+
+Dataset: The required dataset can be downloaded from the link below: https://github.com/ArinB/MSBA-CA01-Spam-Mail-Naibe-Bayes. To rerun the program, you may need to download the dataset to your own Google Drive follow the order as "/content/drive/My Drive/MSBA_Colab_2020/ML_Algorithms/CA02/Data". And after you accomplish the download, you can execute the top section of the code to mount your drive, after you input the code it ask you to copy and paste, it shouldn't be any more error pop out for this section of code and you should be good to go. 
 
 ## Assignment Requirements
 
