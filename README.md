@@ -41,7 +41,7 @@ The expected outcome should already be displayed in the notebook under the codes
 
 <b>Stop words:</b> A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that a search engine has been programmed to ignore, both when indexing entries for searching and when retrieving them as the result of a search query. We would not want these words to take up space in our database, or taking up valuable processing time. 
 
-<b>Gaussian:</b> GaussianNB implements the Gaussian Naive Bayes algorithm for classification. It is used in classification and it assumes that features follow a normal distribution. <u>(What we use in this assignment)</u>
+<b>Gaussian:</b> GaussianNB implements the Gaussian Naive Bayes algorithm for classification. It is used in classification and it assumes that features follow a normal distribution. *(What we use in this assignment)*
 
 <b>Multinomial:</b> MultinomialNB implements the naive Bayes algorithm for multinomially distributed data, and is one of the two classic naive Bayes variants used in text classification. It is used for discrete counts. For example, let’s say, we have a text classification problem. Here we can consider bernoulli trials which is one step further and instead of “word occurring in the document”, we have “count how often word occurs in the document”, you can think of it as “number of times outcome number x_i is observed over the n trials”.
 
