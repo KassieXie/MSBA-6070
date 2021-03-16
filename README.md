@@ -1,9 +1,9 @@
 # MSBA-6070
  Including class assignments and other course related work
  
-# CA2 - Decision Tree Algorithm 
+# CA4 - Ensemble Models
 
-Goal: Perform decision tree and a sort of related activities on a dataset
+Goal: Try different emsemble methods on the same dataset(census dataset) and compare their performance. 
 
 Dataset: 
 The dataset is obtained from the Census Bureau and represents salaries of people
@@ -12,18 +12,13 @@ along with seven demographic variables. The following is a description of our da
 • Number of attributes (Columns): 7
 • Number of instances (Rows): 48,842
 
-There are training.csv and testing.csv separated from the original dataset placed in the folder as well.
+You should be able to obtained the dataset in the folder.
 
 ## Assignment Requirements
 
-1. Data Quality Analysis (DQA) 
-2. Exploratory Data Analysis (EDA)
-3. Build Decision Tree Classifier Models
-4. Visualize Your Decision Tree using GraphViz
-5. Evaluate Decision Tree Performance
-6. Tune Decision Tree Performance
-7. Automation of Performance Tuning -INCOMPLETE
-8. Prediction using your “trained” Decision Tree Model -INCOMPLETE
+1. Building a Random Forest Model
+2. Building AdaBoost, Gradient Boost (classifier) and XGB Model
+3. Compare Performance
 
 ## Language 
 
@@ -44,9 +39,9 @@ all sorts of packages including numpy, sklearn, and so on.
 The expected outcome should already be displayed in the notebook under the codes, but feel free to test the code on your own.
 
 ## Logic Behind
-Decision Trees (DTs) are a non-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features. A tree can be seen as a piecewise constant approximation.
+The sklearn.ensemble module includes ensemble-based methods for classification, regression and anomaly detection.
 
-And all other sources related to DTs provided by scikit-learn developers can be found at: https://scikit-learn.org/stable/modules/tree.html#tree-algorithms-id3-c4-5-c5-0-and-cart
+All formal sources related to ensemble methods provided by scikit-learn developers can be found at: https://scikit-learn.org/stable/modules/classes.html?highlight=sklearn%20ensemble#module-sklearn.ensemble
 
 ## Contributing
 Apologize in advance that any pull requests other by the host might be rejected because this is an education repository for personal use. 
