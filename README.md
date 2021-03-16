@@ -3,14 +3,14 @@
  
 # CA4 - Ensemble Models
 
-Goal: Try different emsemble methods on the same dataset(census dataset) and compare their performance. 
+**Goal:** Try different emsemble methods on the same dataset(census dataset) and compare their performance. 
+
 
 Dataset: 
 
-The dataset is obtained from the Census Bureau and represents salaries of people
+The dataset is obtained from the Census Bureau and represents salaries of people along with seven demographic variables. 
 
-
-along with seven demographic variables. The following is a description of our dataset:
+The following is a description of our dataset:
 
 • Number of target classes: 2 ('>50K' and '<=50K') [ Labels: 1, 0 ]
 
