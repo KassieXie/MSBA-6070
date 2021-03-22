@@ -7,6 +7,8 @@
 collected from a 15 year heart study cohort is made available for this assignment.
 
 **Goal:** 
+
+
 Part 1: build a binary classifier model to predict the CVD Risk (Yes/No, or 1/0) using a Logistic
 Regression Model with the best performance possible (deliverable: Notebook)
 
