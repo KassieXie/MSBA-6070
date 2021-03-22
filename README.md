@@ -3,19 +3,21 @@
  
 # CA5 A - Logistic Regression
 
-Background: Cardiovascular Disease (CVD) kills more people than cancer globally. A dataset of real heart patients
+*Background:* Cardiovascular Disease (CVD) kills more people than cancer globally. A dataset of real heart patients
 collected from a 15 year heart study cohort is made available for this assignment.
 
 **Goal:** 
 Part 1: build a binary classifier model to predict the CVD Risk (Yes/No, or 1/0) using a Logistic
 Regression Model with the best performance possible (deliverable: Notebook)
+
 Part 2: Display the Feature Importance of all the features sorted in the order of decreasing influence on
 the CVD Risk (deliverable: Notebook)
+
 Part 3: Evaluate the performance of your model (including ROC Curve), explain the performance and
 draw a meaningful conclusion. (deliverable: Performance outputs in Notebook, explanation and
 conclusion in Word/PDF document)
 
-Dataset: 
+*Dataset:* 
 The dataset has 16 patient features. Note that none of the features include any Blood Test information.
 
 The file location is https://raw.githubusercontent.com/ArinB/CA05-B-Logistic-Regression/master/cvd_data.csv. You can directly input the location in the codes, or use the file I provided in the folder with my codes.
@@ -23,21 +25,37 @@ The file location is https://raw.githubusercontent.com/ArinB/CA05-B-Logistic-Reg
 The following is a description of columns:
 
 •	cvd_4types: Label Column. 0 indicates “No Risk”, 1 indicates “Risk Present”
+
 •	age_s1: Age in Years
+
 •	race: 1 - White, 2 - Black, 3 – Other
+
 •	educat: Education level (Sleep Heart Health Study Visit One (SHHS1))
+
 •	mstat: Marital Status (Sleep Heart Health Study Visit One (SHHS1))
+
 •	hip: Hip Circumference (Sleep Heart Health Study Visit One (SHHS1))
+
 •	neck20: Neck Circumference (Sleep Heart Health Study Visit One (SHHS1))
+
 •	waist: Waist Circumference (Sleep Heart Health Study Visit One (SHHS1))
+
 •	av_weight_kg: assumebly average weight in kg
+
 •	cgpkyr: Cigarette pack-years (Sleep Heart Health Study Visit One (SHHS1))
+
 •	tea15: Health Interview (Sleep Heart Health Study Visit One (SHHS1)): cups of tea on a regular day
+
 •	srhype: Self-reported hypertension (HTN) (Sleep Heart Health Study Visit One (SHHS1))
+
 •	parrptdiab: History of Diabetes (Sleep Heart Health Study Visit One (SHHS1))
+
 •	bend25: Quality of Life (QOL) (Sleep Heart Health Study Visit One (SHHS1)): Health limits bending, kneeling, or stooping
+
 •	happy25: Quality of Life (QOL) (Sleep Heart Health Study Visit One (SHHS1)): Been a happy person
+
 •	tired25: Quality of Life (QOL) (Sleep Heart Health Study Visit One (SHHS1)): Felt tired
+
 •	hlthlm25: Quality of Life (QOL) (Sleep Heart Health Study Visit One (SHHS1)): Health limited your social activities
 
 
