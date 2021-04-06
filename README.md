@@ -1,7 +1,7 @@
 # MSBA-6070
  Including class assignments and other course related work
  
-# CA5 A - Logistic Regression
+# CA6 - kNN Based Recommender Engine 
 
 *Background:* 
 
