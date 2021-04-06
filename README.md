@@ -3,70 +3,51 @@
  
 # CA5 A - Logistic Regression
 
-*Background:* Cardiovascular Disease (CVD) kills more people than cancer globally. A dataset of real heart patients
-collected from a 15 year heart study cohort is made available for this assignment.
+*Background:* 
+
+Given a movies data set, what are the 5 most similar movies to a movie query? 
+
+- Let us build the core of a movies recommender system.
+
 
 **Goal:** 
 
-
-Part 1: build a binary classifier model to predict the CVD Risk (Yes/No, or 1/0) using a Logistic
-Regression Model with the best performance possible (deliverable: Notebook)
-
-Part 2: Display the Feature Importance of all the features sorted in the order of decreasing influence on
-the CVD Risk (deliverable: Notebook)
-
-Part 3: Evaluate the performance of your model (including ROC Curve), explain the performance and
-draw a meaningful conclusion. (deliverable: Performance outputs in Notebook, explanation and
-conclusion in Word/PDF document)
+*Build A Recommender System*
+- building your own movie recommendation website which uses your Recommendation Engine at
+the back-end
+    - To build this back-end Recommendation Engine specifically
 
 *Dataset:* 
-The dataset has 16 patient features. Note that none of the features include any Blood Test information.
+If we worked at Netflix, Hulu, or IMDb, we could grab the data from their data warehouse. Since we
+don’t work at any of those companies, we have to get our data through some other means. We could use
+some movies data from the UCI Machine Learning Repository, IMDb’s data set, or painstakingly create
+our own. In our case, we will use a small sub-set of the data extracted from the UCI’s IMDB data set.
 
-The file location is https://raw.githubusercontent.com/ArinB/CA05-B-Logistic-Regression/master/cvd_data.csv. You can directly input the location in the codes, or use the file I provided in the folder with my codes.
 
-The following is a description of columns:
+Data File Name: movies_recommendation_data.csv
 
-•	cvd_4types: Label Column. 0 indicates “No Risk”, 1 indicates “Risk Present”
+File Location: https://github.com/ArinB/CA05-kNN/raw/master/movies_recommendation_data.csv
+The file location has already been inserted into the codes.
 
-•	age_s1: Age in Years
-
-•	race: 1 - White, 2 - Black, 3 – Other
-
-•	educat: Education level (Sleep Heart Health Study Visit One (SHHS1))
-
-•	mstat: Marital Status (Sleep Heart Health Study Visit One (SHHS1))
-
-•	hip: Hip Circumference (Sleep Heart Health Study Visit One (SHHS1))
-
-•	neck20: Neck Circumference (Sleep Heart Health Study Visit One (SHHS1))
-
-•	waist: Waist Circumference (Sleep Heart Health Study Visit One (SHHS1))
-
-•	av_weight_kg: assumebly average weight in kg
-
-•	cgpkyr: Cigarette pack-years (Sleep Heart Health Study Visit One (SHHS1))
-
-•	tea15: Health Interview (Sleep Heart Health Study Visit One (SHHS1)): cups of tea on a regular day
-
-•	srhype: Self-reported hypertension (HTN) (Sleep Heart Health Study Visit One (SHHS1))
-
-•	parrptdiab: History of Diabetes (Sleep Heart Health Study Visit One (SHHS1))
-
-•	bend25: Quality of Life (QOL) (Sleep Heart Health Study Visit One (SHHS1)): Health limits bending, kneeling, or stooping
-
-•	happy25: Quality of Life (QOL) (Sleep Heart Health Study Visit One (SHHS1)): Been a happy person
-
-•	tired25: Quality of Life (QOL) (Sleep Heart Health Study Visit One (SHHS1)): Felt tired
-
-•	hlthlm25: Quality of Life (QOL) (Sleep Heart Health Study Visit One (SHHS1)): Health limited your social activities
+Snapshot of part of the data:
+![image](https://user-images.githubusercontent.com/52426579/113661381-f8880000-9673-11eb-8bf8-ce67ecc55740.png)
 
 
 
 ## Assignment Requirements
 
-1. Build a binary classifier model
-2. Display the Feature Importance of all the features
-3. Evaluate the performance of your model
+Build A Recommender System
+
+    - when we run the KNN algorithm on our data, similarity will be based solely on the included genres and the IMDB ratings of the movies.
+
+    - Imagine a user is navigating your recommendation website, and he/she encounters a movie named “The Post”. The user is not sure if he/she wants to watch it, but its genres intrigue the user; he/she is curious about other similar movies. The user scrolls down to the “More Like This” section to see what recommendations your recommendation website will make, and the back-end algorithmic gears begin to turn.
+
+    - Your website sends a request to its back-end for the 5 movies that are most similar to The Post. The backend has a recommendation data set exactly like ours. It begins by creating the row representation (better known as a feature vector) for The Post, then it runs a program similar to the one below to search for the 5 movies that are most similar to The Post, and finally sends the results back to the user at your website.
+
+    - Information about the movie “The Post”
+        - IMDB Rating = 7.2, Biography = Yes, Drama = Yes, Thriller = No, Comedy = No, Crime = No, Mystery = No, History = Yes
+
+
 
 ## Language 
 
@@ -79,7 +60,7 @@ The comment and text language: English
 
 ## Packages Installed 
 Python packages: 
-all sorts of packages including numpy, sklearn, and so on.
+all sorts of packages including numpy, pandas, sklearn, and so on.
 
 - The codes include installing packages are already embeded in this notebook. It shouldn't have problem if you run my code step by step. 
 
@@ -87,9 +68,13 @@ all sorts of packages including numpy, sklearn, and so on.
 The expected outcome should already be displayed in the notebook under the codes, but feel free to test the code on your own.
 
 ## Logic Behind
-Logistic Regression is a Machine Learning classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.). In other words, the logistic regression model predicts P(Y=1) as a function of X.
+K Nearest Neighbor(KNN) is a very simple, easy to understand, versatile and one of the topmost machine learning algorithms. KNN used in the variety of applications such as finance, healthcare, political science, handwriting detection, image recognition and video recognition. 
 
-All formal sources related to logistic regression linear model provided by scikit-learn developers can be found at: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+KNN is a non-parametric and lazy learning algorithm. Non-parametric means there is no assumption for underlying data distribution. In other words, the model structure determined from the dataset. This will be very helpful in practice where most of the real world datasets do not follow mathematical theoretical assumptions. Lazy algorithm means it does not need any training data points for model generation. All training data used in the testing phase. This makes training faster and testing phase slower and costlier.
+
+sklearn.neighbors provides functionality for unsupervised and supervised neighbors-based learning methods. Unsupervised nearest neighbors is the foundation of many other learning methods, notably manifold learning and spectral clustering. Supervised neighbors-based learning comes in two flavors: classification for data with discrete labels, and regression for data with continuous labels.
+
+Other resources related to K-Nearest Neighbors provided by scikit-learn developers can be found at: https://scikit-learn.org/stable/modules/neighbors.html and https://www.datacamp.com/community/tutorials/k-nearest-neighbor-classification-scikit-learn provided by DataCamp.
 
 ## Contributing
 Apologize in advance that any pull requests other by the host might be rejected because this is an education repository for personal use. 
